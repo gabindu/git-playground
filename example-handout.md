@@ -12,9 +12,6 @@ Here is a list:
 - 42
 - 8888888
 
-
-
-nj
 ## More cool stuff
 
 `git` is really very useful!
