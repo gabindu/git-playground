@@ -18,7 +18,7 @@ handouts : $(handouts)
 
 
 %-slides.pdf: %-slides.md
-	pandoc -i -t beamer -V theme:Warsaw $< -o $@
+	pandoc -i -t beamer -V theme:Warsaw -V colorlinks=true $< -o $@
 
 %-handout.pdf: %-handout.md
-	pandoc -N -V geometry=height=10in,width=7.5in --pdf-engine=xelatex $< -o $@
+	pandoc -N -V geometry=height=10in,width=7.5in -V colorlinks=true --pdf-engine=xelatex $< -o $@
